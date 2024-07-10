@@ -27,6 +27,15 @@
         };
     };
 
+    macros {
+        macro_at_ru: macro_at_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp AT_SIGN &kp LA(LEFT_SHIFT)>;
+            label = "MACRO_AT_RU";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -113,7 +122,17 @@
 &trans  &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans        &trans        &trans        &trans        &mo 2     &mo 2   &trans  &trans  &trans  &trans
+                      &trans        &lt 5 TAB     &trans        &trans        &mo 2     &mo 2   &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp AT                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &macro_at_ru                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans        &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
