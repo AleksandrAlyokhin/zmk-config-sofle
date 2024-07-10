@@ -59,10 +59,10 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1                &kp F2                &kp F3     &kp F4                 &kp F5                       &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
+&trans     &none                 &none                 &none      &none                  &none                        &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
 &kp GRAVE  &kp DOLLAR            &kp LESS_THAN         &kp EQUAL  &kp GREATER_THAN       &kp GRAVE                    &kp N6     &kp N7    &kp N8           &kp N9     &kp N0    &kp F12
 &trans     &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp PIPE
-&trans     &kp EQUAL             &kp ASTERISK          &kp COLON  &kp SLASH              &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI         &kp COLON  &kp BSLH  &trans
+&trans     &kp EQUAL             &kp ASTERISK          &kp COLON  &kp SLASH              &none      &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI         &kp COLON  &kp BSLH  &trans
                                  &trans                &trans     &trans                 &trans     &trans    &trans  &trans     &trans    &trans           &trans
             >;
 
