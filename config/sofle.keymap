@@ -136,12 +136,26 @@
 &kp GRAVE         &kp Q   &kp W   &kp E      &kp R        &kp T                                           &kp Y                      &kp U   &kp I         &kp O    &kp P     &kp LEFT_BRACKET
 &kp LEFT_CONTROL  &kp A   &kp S   &kp D      &kp F        &kp G                                           &kp H                      &kp J   &kp K         &kp L    &kp SEMI  &mt RIGHT_CONTROL SINGLE_QUOTE
 &kp LEFT_ALT      &kp Z   &kp X   &kp C      &kp V        &kp B               &kp N6         &kp N7       &kp N                      &kp M   &kp COMMA     &kp DOT  &kp FSLH  &mt RIGHT_ALT BACKSLASH
-                          &kp N1  &lt 1 TAB  &macro_ruen  &mt LEFT_SHIFT ESC  &lt 2 SPACE    &lt 2 ENTER  &mt RIGHT_SHIFT BACKSPACE  &none   &lt 1 DELETE  &none
+                          &kp N1  &lt 5 TAB  &macro_ruen  &mt LEFT_SHIFT ESC  &lt 2 SPACE    &lt 2 ENTER  &mt RIGHT_SHIFT BACKSPACE  &none   &lt 5 DELETE  &none
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans     &none                 &none                 &none      &none                  &none                        &none          &none             &kp CARET       &none              &none            &none
+&kp GRAVE  &kp DOLLAR            &kp LESS_THAN         &kp EQUAL  &kp GREATER_THAN       &kp GRAVE                    &none          &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &none            &none
+&trans     &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp PERCENT    &kp LEFT_BRACE    &kp SEMICOLON   &kp RIGHT_BRACE    &kp EXCLAMATION  &none
+&trans     &kp EQUAL             &kp ASTERISK          &kp COLON  &kp SLASH              &none      &trans    &trans  &kp BACKSPACE  &kp PIPE          &kp TILDE       &kp AMPERSAND      &none            &trans
+                                 &trans                &trans     &trans                 &mo 3      &trans    &trans  &mo 3          &trans            &trans          &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
     };
 };
