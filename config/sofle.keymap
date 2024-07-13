@@ -45,7 +45,7 @@
         macro_ruen: macro_ruen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 0 &kp LC(N5) &kp N5>;
+            bindings = <&to 0 &kp LC(N5) &kp N5>;
             label = "MACRO_RUEN";
         };
 
