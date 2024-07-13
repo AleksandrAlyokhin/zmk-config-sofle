@@ -38,14 +38,14 @@
         macro_enru_layer: macro_enru_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 4 &kp LC(N6) &kp N6>;
+            bindings = <&tog 4 &kp LC(N6)>;
             label = "MACRO_ENRU_LAYER";
         };
 
         macro_ruen: macro_ruen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LC(N5) &kp N5>;
+            bindings = <&to 0 &kp LC(N5)>;
             label = "MACRO_RUEN";
         };
 
